@@ -24,7 +24,6 @@ public class PayrollSystem {
         do {
             System.out.print("\nPlease select the employee number (1, 2, 3, 4, or 5) for whom you would like to propose a salary or wage increase: ");
             int choice = read.nextInt();
-//            read.nextLine(); // for input buffer
             double increamentPercent;
             switch (choice) {
                 case 1:
@@ -86,7 +85,7 @@ public class PayrollSystem {
                     System.out.println("Wrong Input");
             }
             System.out.print("Would you like to proceed with increasing the salary, wage, or commission rate of another employee? Please press 'Y' to continue or any other key to indicate your decision not to proceed: ");
-            read.nextLine();
+            read.nextLine(); // for input buffer
             option = read.nextLine().toLowerCase().charAt(0);
         } while (option == 'y');
     }
